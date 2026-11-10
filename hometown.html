@@ -2,31 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Hometown</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hometown</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>My Hometown</h1>
+        <div class="logo">Alex Developer</div>
         <nav>
             <a href="index.html" class="nav-btn">Home</a>
-            <a href="about.html" class="nav-btn">About Me</a>
-            <a href="hometown.html" class="nav-btn">Hometown</a>
-            <a href="hobbies.html" class="nav-btn">Hobbies</a>
+            <a href="about.html" class="nav-btn">About</a>
+            <a href="hometown.html" class="nav-btn active">Hometown</a>
+            <a href="hobbies.html" class="nav-btn">Interests</a>
         </nav>
     </header>
 
     <div class="container">
-        <h2>Welcome to My Glorious Hometown</h2>
-        <p>Sungai Petani, Kedah is a wonderful place known for its rich culture, great food, and friendly community.</p>
+        <span class="badge">Location Profile</span>
+        <h2>My Hometown</h2>
+        <p style="color: #94a3b8; margin-bottom: 25px;">
+            Explore the key landmarks and landscapes of my city.
+        </p>
 
-        <h3>Landmarks & Scenery</h3>
-        <div class="gallery">
-            <img src="myhometown1.jpg" alt="Hometown View 1">
-            <img src="myhometown2.jpg" alt="Hometown View 2">
+        <div class="grid-3">
+            <div class="card">
+                <img src="hometown1.jpg" alt="Hometown Landmark 1">
+                <h4 style="margin-top: 15px;">City Center</h4>
+                <p style="color: #94a3b8; font-size: 0.9rem; margin-top: 5px;">A bustling hub of technology and cultural heritage.</p>
+            </div>
+            <div class="card">
+                <img src="hometown2.jpg" alt="Hometown Landmark 2">
+                <h4 style="margin-top: 15px;">Scenic Parklands</h4>
+                <p style="color: #94a3b8; font-size: 0.9rem; margin-top: 5px;">Natural surroundings perfect for outdoor activities.</p>
+            </div>
         </div>
     </div>
+
+    <footer>&copy; 2026 Alex Developer. All rights reserved.</footer>
 
 </body>
 </html>
