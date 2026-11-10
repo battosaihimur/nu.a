@@ -3,29 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Personal Portfolio</title>
+    <title>Portfolio - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>My Portfolio</h1>
+        <div class="logo">Alex Developer</div>
         <nav>
             <a href="index.html" class="nav-btn active">Home</a>
-            <a href="about.html" class="nav-btn">About Me</a>
+            <a href="about.html" class="nav-btn">About</a>
             <a href="hometown.html" class="nav-btn">Hometown</a>
-            <a href="hobbies.html" class="nav-btn">Hobbies</a>
-            <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
+            <a href="hobbies.html" class="nav-btn">Interests</a>
         </nav>
     </header>
 
-    <div class="container">
-        <h2>Welcome to My Website! 👋</h2>
-        <p>I built this responsive multi-page website to showcase my background, hometown, and personal passions using custom HTML, CSS, and JavaScript.</p>
-        
-        <button class="btn-primary" onclick="triggerGreeting()">Say Hello!</button>
+    <div class="container grid-2">
+        <div>
+            <span class="badge">Digital Business Portfolio</span>
+            <h1>Building Future-Ready Web Solutions</h1>
+            <p style="color: #94a3b8; margin-bottom: 25px;">
+                Welcome to my portfolio! I specialize in modern front-end web design, creating responsive interfaces with HTML, CSS, and JavaScript.
+            </p>
+            <button class="btn-primary" id="interactiveBtn">Explore Works</button>
+        </div>
+        <div>
+            <img src="my-photo.jpg" alt="Developer Workspace" class="profile-img">
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <footer>&copy; 2026 Alex Developer. All rights reserved.</footer>
+
+    <script>
+        document.getElementById('interactiveBtn').addEventListener('click', () => {
+            alert("Thank you for viewing my business portfolio! Feel free to explore the navigation menu.");
+        });
+    </script>
 </body>
 </html>
