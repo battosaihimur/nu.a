@@ -2,32 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Hobbies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies & Interests</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Interests & Hobbies</h1>
+        <div class="logo">Alex Developer</div>
         <nav>
             <a href="index.html" class="nav-btn">Home</a>
-            <a href="about.html" class="nav-btn">About Me</a>
+            <a href="about.html" class="nav-btn">About</a>
             <a href="hometown.html" class="nav-btn">Hometown</a>
-            <a href="hobbies.html" class="nav-btn">Hobbies</a>
+            <a href="hobbies.html" class="nav-btn active">Interests</a>
         </nav>
     </header>
 
     <div class="container">
-        <h2>What I Love to Do</h2>
-        <ul>
-            <li><strong>Web Coding:</strong> Learning new skills in HTML and CSS.</li>
-            <li><strong>Gaming / Reading:</strong> Relaxing during free time.</li>
-            <li><strong>Sports / Fitness:</strong> Staying active and outdoors.</li>
-        </ul>
+        <span class="badge">Personal Growth</span>
+        <h2>Hobbies & Interests</h2>
+        <p style="color: #94a3b8; margin-bottom: 25px;">
+            A balance of technical problem solving, gaming setup design, and active outdoor living.
+        </p>
 
-        <img src="hobbies1.jpg" alt="My Favorite Hobby" width="400">
-	<img src="hobbies2.jpg" alt="My Favorite Hobby" width="400">
+        <div class="grid-3">
+            <div class="card">
+                <h3>💻 Web Coding</h3>
+                <p style="color: #94a3b8; margin-top: 10px;">Mastering front-end architecture using modern HTML5, CSS layout grids, and JavaScript interactivity.</p>
+            </div>
+            <div class="card">
+                <h3>🎮 Gaming Setup</h3>
+                <p style="color: #94a3b8; margin-top: 10px;">Building desktop configurations and engaging in competitive real-time strategy games.</p>
+            </div>
+            <div class="card">
+                <h3>🏔️ Outdoor Hiking</h3>
+                <p style="color: #94a3b8; margin-top: 10px;">Exploring mountain trails and maintaining physical fitness through nature activities.</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <img src="hobby1.jpg" alt="Hobbies Collage" style="max-height: 400px;">
+        </div>
     </div>
+
+    <footer>&copy; 2026 Alex Developer. All rights reserved.</footer>
 
 </body>
 </html>
